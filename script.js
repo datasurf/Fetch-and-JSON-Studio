@@ -4,12 +4,11 @@ window.addEventListener("load", function(){
             const container = document.getElementById("container");
             
             for (let i = 0; i < json.length; i++){
-                let arrayPos = json[i]
-                let fullName = arrayPos.firstName + " " + arrayPos.lastName
-                let spaceHrs = arrayPos.hoursInSpace
-                let active = arrayPos.active
-                let skills = arrayPos.skills
-                let avatar = arrayPos.picture
+                let fullName = json[i].firstName + " " + json[i].lastName
+                let spaceHrs = json[i].hoursInSpace
+                let active = json[i].active
+                let skills = json[i].skills
+                let avatar = json[i].picture
 
                 container.innerHTML += `
                 <div class="astronaut">
